@@ -59,6 +59,8 @@ public class ReflectionTest {
         //callB 메서드 정보
         Method methodCallB = classHello.getMethod("callB");
         dynamicCall(methodCallB, target);
+
+        /* 이제 공통 코드로 뽑아서 쓸수가 있구나 */
     }
 
     private void dynamicCall(Method method, Object target) throws Exception {
